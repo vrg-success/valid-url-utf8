@@ -2,7 +2,9 @@
 # yarn lockfile v1
 
 
-valid-url-utf8@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/valid-url-utf8/-/valid-url-utf8-1.0.0.tgz#8771eeafc7b3997f53a9a0a8c9c6a7c44eded183"
-  integrity sha512-7U+VqcwbHTpGzvzjKcTAxXbELa+WHcjcFFqOaoUGJiHj3p157o6muKae+iI8d8qIlF25ozdGa6duIDHVa4hrIQ==
+valid-url-utf8@^1.0.0, valid-url-utf8@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/valid-url-utf8/-/valid-url-utf8-1.0.1.tgz#d53e25cd3b65b70de6bb8df788b12ba71b17b71a"
+  integrity sha512-uHSnpXOly9dGCwNVUEOSJCAqJ5J62IMIyKDPnKKjVmsLRfWBXgRHDNNO0fJtfbLp6Jm+aeFkUcaGD7+MbVSYxg==
+  dependencies:
+    valid-url-utf8 "^1.0.0"
