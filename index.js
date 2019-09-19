@@ -5,7 +5,7 @@
 }(this, function () { 'use strict';
 
   function validUrlUtf8(str) {
-    return /^((ftp|http|https?):\/\/)?((?!www\.)|www\.)([^();\\\/`'"!~{}\(\) ])+\.[^;:\\\/`'"!~{}\(\) ]{2,}(\/|$)/.test(str);
+    return /^((ftp|http|https?):\/\/)?((?!www\.)|www\.)([^();\.\\\/`'"!~{}\(\) ])+\.[^;:\.\\\/`'"!~{}\(\) ]{2,}(\/|$)/.test(str);
   }
 
   return validUrlUtf8;
