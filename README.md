@@ -1,3 +1,6 @@
+[![npm version](https://badge.fury.io/js/valid-url-utf8.svg)](https://badge.fury.io/js/valid-url-utf8)
+
+
 ### Installation
 ```
 yarn add valid-url-utf8
