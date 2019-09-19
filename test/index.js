@@ -9,7 +9,8 @@ const data = [
   'www.sit e-name.domain',
   'www.site-name.d',
   'site-n/ame.domain',
-  'site-name.d/omain'
+  'site-name.d/omain',
+  'https://.....w....w....//'
 ];
 
 data.forEach(url => {
