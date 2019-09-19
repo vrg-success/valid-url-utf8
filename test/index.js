@@ -1,4 +1,4 @@
-import validUrlUtf8 from 'valid-url-utf8';
+const validUrlUtf8 = require('valid-url-utf8');
 
 
 const data = [
@@ -14,5 +14,5 @@ const data = [
 
 data.forEach(url => {
   const isValid = validUrlUtf8(url);
-  document.body.appendChild(`${url} = ${isValid}</br>`);
+  console.log(`${url} = ${isValid}`);
 });

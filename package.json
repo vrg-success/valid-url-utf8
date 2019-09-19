@@ -23,5 +23,8 @@
   "homepage": "https://github.com/FrontendMetis/valid-url-utf8",
   "directories": {
     "test": "test"
+  },
+  "dependencies": {
+    "valid-url-utf8": "^1.0.0"
   }
 }
