@@ -10,7 +10,8 @@ const data = [
   'www.site-name.d',
   'site-n/ame.domain',
   'site-name.d/omain',
-  'https://.....w....w....//'
+  'https://.....w....w....//',
+  'https://www.youtube.cf..ff/watch?v=nKr9cWIEKtk'
 ];
 
 data.forEach(url => {

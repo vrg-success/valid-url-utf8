@@ -5,7 +5,11 @@
 }(this, function () { 'use strict';
 
   function validUrlUtf8(str) {
-    return /^((ftp|http|https?):\/\/)?((?!www\.)|www\.)([^();\.\\\/`'"!~{}\(\) ])+\.[^;:\\\/`'"!~{}\(\) ]{2,}(\/|$)/.test(str);
+    // If contains dots more than 1 return false
+    if (/^((ftp|http|https?):\/\/)?((?!www\.)|www\.)([^\(\)\;\.\\\/\`\'\"\!\~\{\}\(\)\s])+\.[^\;\:\\\/\`\'\"\!\~\{\}\(\)\s]{2,}(\.\.)/.test(str)) {
+      return false;
+    }
+    return /^((ftp|http|https?):\/\/)?((?!www\.)|www\.)([^\(\)\;\.\\\/\`\'\"\!\~\{\}\(\)\s])+\.[^\;\:\\\/\`\'\"\!\~\{\}\(\)\s]{2,}(\/|$)/.test(str);
   }
 
   return validUrlUtf8;
