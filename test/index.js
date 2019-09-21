@@ -7,6 +7,7 @@ const data = [
   'site-name.domain',
   'русскоязычное-название.рф',
   'www.sit e-name.domain',
+  'www.<site-name>.domain',
   'www.site-name.d',
   'site-n/ame.domain',
   'site-name.d/omain',
