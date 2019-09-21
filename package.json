@@ -25,6 +25,6 @@
     "test": "test"
   },
   "dependencies": {
-    "valid-url-utf8": "^1.0.3"
+    "valid-url-utf8": "^1.0.4"
   }
 }
