@@ -19,6 +19,6 @@ it('validations', () => {
     ],
   };
 
-  links.incorrect.forEach(url => expect(validUrlUtf8(url)).toBe(true));
+  links.correct.forEach(url => expect(validUrlUtf8(url)).toBe(true));
   links.incorrect.forEach(url => expect(validUrlUtf8(url)).toBe(false));
 });
