@@ -1,7 +1,7 @@
 {
   "name": "valid-url-utf8",
   "description": "Good validator of url with utf8 support",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -14,9 +14,15 @@
     "url": "git+https://github.com/FrontendMetis/valid-url-utf8.git"
   },
   "keywords": [
-    "url-valid",
-    "valid-url",
-    "valid-url-utf8"
+    "url-validator",
+    "uri-validator",
+    "link-validator",
+    "url-validate",
+    "uri-validate",
+    "link-validate",
+    "util-validate-url",
+    "util-validate-uri",
+    "util-validate-link"
   ],
   "author": "Valyaev Rustam",
   "license": "MIT",
