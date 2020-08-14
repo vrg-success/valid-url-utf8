@@ -1,7 +1,7 @@
 {
   "name": "valid-url-utf8",
   "description": "Good validator of url with utf8 support",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "index.js",
   "scripts": {
     "test": "jest"

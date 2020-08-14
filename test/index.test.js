@@ -1,24 +1,20 @@
 const validUrlUtf8 = require('valid-url-utf8');
 
 it('validations', () => {
-  const links = {
-    correct: [
-      'https://site-name.domain',
-      'www.site-name.domain',
-      'site-name.domain',
-      'русскоязычное-название.рф',
-    ],
-    incorrect: [
-      'www.sit e-name.domain',
-      'www.<site-name>.domain',
-      'www.site-name.d',
-      'site-n/ame.domain',
-      'site-name.d/omain',
-      'https://.....w....w....//',
-      'https://www.youtube.cf..ff/watch?v=nKr9cWIEKtk',
-    ],
-  };
+  // correct
+  expect(validUrlUtf8('https://site-name.domain')).toBe(true);
+  expect(validUrlUtf8('www.site-name.domain')).toBe(true);
+  expect(validUrlUtf8('site-name.domain')).toBe(true);
+  expect(validUrlUtf8('русскоязычное-название.рф')).toBe(true);
 
-  links.correct.forEach(url => expect(validUrlUtf8(url)).toBe(true));
-  links.incorrect.forEach(url => expect(validUrlUtf8(url)).toBe(false));
+  // incorrect
+  expect(validUrlUtf8('www.sit e-name.domain')).toBe(false);
+  expect(validUrlUtf8('www.<site-name>.domain')).toBe(false);
+  expect(validUrlUtf8('www.site-name.d')).toBe(false);
+  expect(validUrlUtf8('site-n/ame.domain')).toBe(false);
+  expect(validUrlUtf8('site-name.d/omain')).toBe(false);
+  expect(validUrlUtf8('https://.....w....w....//')).toBe(false);
+  expect(validUrlUtf8('https://www.youtube.cf..ff/watch?v=nKr9cWIEKtk')).toBe(
+    false
+  );
 });
